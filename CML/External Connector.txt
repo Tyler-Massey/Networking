@@ -1,0 +1,7 @@
+CONNECT CML TO HOST NETWORK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Add External Connector, node in CML
+- Set Connector to Bridge, mode
+    - Verify host server NAT/Bridge settings on network adapter
+- Connect gateway device to External connector, router, jumpbox etc, and assign ip address from host network to device
