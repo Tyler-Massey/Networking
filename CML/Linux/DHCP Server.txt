@@ -1,0 +1,24 @@
+CONFIGURE LINUX VM AS DHCP SERVER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Update packages
+- sudo apt update
+- sudo apt upgrade
+- use kea dhcp package
+
+- /etc/kea/kea-dhcp4.conf
+
+
+
+sudo systemctl restart kea-dhcp4-server
+#restarts kea-dhcp4-server, service
+
+sudo systemctl status kea-dhcp4-server
+#checks status of kea dhcp server
+
+
+sudo tcpdump -i ens3 -vvv -n port 67 or port 68
+# listens for dhcp traffic
+
+sudo tail -f /var/log/apache2/access.log
+# listens for apache traffic
